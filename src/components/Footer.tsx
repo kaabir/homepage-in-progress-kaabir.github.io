@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, ShieldAlert } from "lucide-react";
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com" },
@@ -30,6 +30,19 @@ export function Footer() {
               </a>
             ))}
           </div>
+        </div>
+
+        <div className="mt-6 pt-6 border-t flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
+          <ShieldAlert className="h-4 w-4 mt-0.5 shrink-0" />
+          <p>
+            <strong className="text-foreground">Content usage notice:</strong>{" "}
+            All text, images, and publications on this site are protected by copyright.
+            Automated scraping, crawling, or use of this content for training
+            artificial intelligence models, large language models, or any
+            commercial dataset is strictly prohibited without prior written
+            consent. Unauthorized use may result in DMCA takedown requests and
+            legal action.
+          </p>
         </div>
       </div>
     </footer>
